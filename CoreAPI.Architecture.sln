@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{237C9CA8-88BE-4E76-B94F-4F0D57A7DE9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{187674EA-2AD9-4318-B9E2-321DD0826D0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{A98A6CC2-BD96-4647-936D-2C03AE65A42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nomesh.ApiGateways", "Source\ApiGateways\Nomesh.ApiGateways\Nomesh.ApiGateways.csproj", "{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A98A6CC2-BD96-4647-936D-2C03AE65A42F} = {187674EA-2AD9-4318-B9E2-321DD0826D0C}
+		{1095F8F9-5F43-4B57-A5CB-71BFB8B51CFE} = {A98A6CC2-BD96-4647-936D-2C03AE65A42F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C729B00-F6C0-4FE1-9EE2-C8407B0E3A83}
+	EndGlobalSection
+EndGlobal
