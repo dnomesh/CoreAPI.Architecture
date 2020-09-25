@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "pBD7IanNTIz9/+zeBRP7aONADP6pYkz0bku1FIjo52jGBMxU9vC4jvMyYgwvFsolIau6jdSaXA18g8zqdUoECw==",
+  "dgSpecHash": "z7MRh8hyXiQU65DF5i1vttHLAvsLiNKYmjvIf71CW8Vovz1jp0Gs3tdlQd9Ihc78auG83SPUqVmAsNJ/nRZAGQ==",
   "success": true,
-  "projectFilePath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\Nomesh.ApiGateways.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\Nomesh.APIGateways.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.3\\microsoft.aspnetcore.jsonpatch.3.1.3.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\3.1.3\\microsoft.aspnetcore.middlewareanalysis.3.1.3.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.3\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.3.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.3\\microsoft.extensions.diagnosticadapter.3.1.3.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\ocelot\\16.0.1\\ocelot.16.0.1.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "C:\\Users\\RAS Wings 8\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\Nomesh.ApiGateways.csproj": {}
+    "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\Nomesh.APIGateways.csproj": {}
   },
   "projects": {
-    "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\Nomesh.ApiGateways.csproj": {
+    "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\Nomesh.APIGateways.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\Nomesh.ApiGateways.csproj",
-        "projectName": "Nomesh.ApiGateways",
-        "projectPath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\Nomesh.ApiGateways.csproj",
+        "projectUniqueName": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\Nomesh.APIGateways.csproj",
+        "projectName": "Nomesh.APIGateways",
+        "projectPath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\Nomesh.APIGateways.csproj",
         "packagesPath": "C:\\Users\\RAS Wings 8\\.nuget\\packages\\",
-        "outputPath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.ApiGateways\\obj\\",
+        "outputPath": "C:\\Nomesh\\CoreAPI.Architecture\\Source\\ApiGateways\\Nomesh.APIGateways\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RAS Wings 8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Ocelot": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
