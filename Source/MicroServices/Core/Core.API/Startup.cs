@@ -31,6 +31,14 @@ namespace Core.API
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
+                c.AddSecurityDefinition("Security Definitions", new OpenApiSecurityScheme()
+                {
+                    BearerFormat="Bearer",
+                    Description="Bearer token",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer"
+                });
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",

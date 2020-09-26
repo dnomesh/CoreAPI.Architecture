@@ -9,6 +9,7 @@ namespace Core.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Produces("application/json")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -24,6 +25,9 @@ namespace Core.API.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(403)]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
