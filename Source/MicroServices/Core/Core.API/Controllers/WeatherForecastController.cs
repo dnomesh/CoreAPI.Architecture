@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Core.API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     [Produces("application/json")]
     public class WeatherForecastController : ControllerBase
