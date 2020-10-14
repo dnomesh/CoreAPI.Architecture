@@ -34,13 +34,29 @@ namespace Core.API
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.AddSecurityDefinition("Security Definitions", new OpenApiSecurityScheme()
+                // To Enable authorization using Swagger (JWT)  
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
-                    BearerFormat = "Bearer",
-                    Description = "Bearer 1234asdf",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
                     In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "bearer"
+                    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                          {
+                              Reference = new OpenApiReference
+                              {
+                                  Type = ReferenceType.SecurityScheme,
+                                  Id = "Bearer"
+                              }
+                          },
+                          new string[] {}
+                    }
                 });
 
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -51,22 +67,23 @@ namespace Core.API
                     TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
-                        Name = "Shayne Boyer",
+                        Name = "Nomesh Divi",
                         Email = string.Empty,
                         Url = new Uri("https://twitter.com/spboyer"),
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Use under LICX",
+                        Name = "Hethash IT Solutions",
                         Url = new Uri("https://example.com/license"),
                     }
                 });
             });
 
-            services.AddAuthentication(options => {
+            services.AddAuthentication(options =>
+            {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
+            })
             .AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters

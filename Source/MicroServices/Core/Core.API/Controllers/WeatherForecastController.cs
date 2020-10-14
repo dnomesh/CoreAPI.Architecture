@@ -10,7 +10,7 @@ namespace Core.API.Controllers
 {
     [ApiController]
     [Authorize]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Produces("application/json")]
     public class WeatherForecastController : ControllerBase
     {
@@ -29,6 +29,7 @@ namespace Core.API.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [ProducesResponseType(403)]
         public IEnumerable<WeatherForecast> Get()
         {
